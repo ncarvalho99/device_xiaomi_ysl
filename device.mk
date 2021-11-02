@@ -9,7 +9,6 @@ $(call inherit-product, device/xiaomi/msm8953-common/msm8953.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 # Screen density
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
@@ -17,9 +16,6 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1440
 TARGET_SCREEN_WIDTH := 720
-
-# Kernel
-PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/ysl/kernel-headers
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
